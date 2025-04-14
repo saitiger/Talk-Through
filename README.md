@@ -7,4 +7,5 @@
 [Pitch](https://github.com/saitiger/Talk-Through/blob/main/Pitch.pdf)
 
 ## Dashboard 
-![Scan Me](http://url/to/img.png](https://github.com/saitiger/Talk-Through/blob/main/Dashboard%20QR%20Code.png)
+![Scan Me]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/saitiger/Talk-Through/blob/main/Dashboard%20QR%20Code.png))
+
