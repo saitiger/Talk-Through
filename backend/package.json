@@ -1,0 +1,19 @@
+
+{
+  "name": "talk-through-backend",
+  "version": "1.0.0",
+  "description": "Backend for Talk Through application with LLM integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "node-llama-cpp": "^2.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

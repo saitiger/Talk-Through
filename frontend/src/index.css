@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 200 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 20% 20%;
+
+    --primary: 175 70% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 80% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 354 65% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 175 70% 41%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 200, 33%, 98%;
+    --sidebar-foreground: 200, 19%, 30%;
+    --sidebar-primary: 175, 70%, 41%;
+    --sidebar-primary-foreground: 0, 0%, 100%;
+    --sidebar-accent: 200, 33%, 95%;
+    --sidebar-accent-foreground: 195, 80%, 20%;
+    --sidebar-border: 210, 20%, 93%;
+    --sidebar-ring: 175, 70%, 41%;
+  }
+
+  .dark {
+    --background: 200 20% 13%;
+    --foreground: 0 0% 95%;
+
+    --card: 200 20% 16%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 200 20% 16%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 175 70% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 80% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 20% 24%;
+    --muted-foreground: 210 20% 70%;
+
+    --accent: 354 65% 61%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 24%;
+    --input: 200 20% 24%;
+    --ring: 175 70% 41%;
+
+    --sidebar-background: 200, 20%, 16%;
+    --sidebar-foreground: 0, 0%, 95%;
+    --sidebar-primary: 175, 70%, 41%;
+    --sidebar-primary-foreground: 0, 0%, 100%;
+    --sidebar-accent: 200, 20%, 24%;
+    --sidebar-accent-foreground: 0, 0%, 95%;
+    --sidebar-border: 200, 20%, 24%;
+    --sidebar-ring: 175, 70%, 41%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .stats-card {
+    @apply rounded-lg border bg-card p-4 shadow-sm transition-all hover:shadow-md;
+  }
+  
+  .dashboard-section {
+    @apply space-y-4;
+  }
+
+  .section-title {
+    @apply text-xl font-semibold text-secondary;
+  }
+}
